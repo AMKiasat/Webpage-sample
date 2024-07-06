@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,7 +77,7 @@ header nav a {
 .hero {
     background-color: #203cbc;
     color: #fff;
-    padding: 50px 20px;
+    padding: 50px 70px;
     text-align: center;
     position: relative;
     height: 400px;
@@ -92,10 +92,10 @@ header nav a {
 
 .hero-content p {
     text-align: left;
-    font-size: 1.2em;
     color: #bbb;
     width: 700px;
     box-sizing: border-box;
+    line-height: 1.7;
 }
 
 .hero-content .app-buttons {
@@ -121,7 +121,7 @@ header nav a {
 
 .features-header{
     color: #fff;
-    background-color: #222;
+    background-color: #14161c;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -129,7 +129,7 @@ header nav a {
 
 
 .features {
-    background-color: #222;
+    background-color: #14161c;
     display: flex;
     overflow-x: auto;
     color: #fff;
@@ -157,12 +157,56 @@ header nav a {
     width: 50px;
 }
 
-.video {
-    background-color: #333;
+.video-on-new {
+    background-color: #14161c;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
 }
+
+.video-content{
+    display: flex;
+}
+
+.video-text {
+    max-width: 550px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: left;
+    color: #bbb;
+    line-height: 1.7;
+}
+  
+.advantages {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.advantages li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+    color: #fff;
+    line-height: 1.2;
+}
+  
+.arrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00f;
+    font-size: 1.5em;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
 
 footer {
     background-color: #0056b3;
