@@ -47,7 +47,11 @@ header {
     margin-right: 8px;
 }
 
-
+.language-text img {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+}
 
 .header-content .top-right .login-button{
     color: #fff;
@@ -101,13 +105,27 @@ header nav a {
 
 .features {
     background-color: #222;
+    display: flex;
+    overflow-x: auto;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .feature {
-    margin: 20px 0;
+    text-align: left;
+    flex: 0 0 auto;
+    word-wrap: break-word;
+    white-space: normal;
+    min-width: 200px;
+    margin: 50px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.feature p{
+    color: #bbb;
 }
 
 .feature img {
