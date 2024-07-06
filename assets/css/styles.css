@@ -8,7 +8,7 @@ body {
 header {
     background-color: #203cbc;
     color: #fff;
-    padding: 100px 20px;
+    padding: 70px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +55,6 @@ header {
 
 .header-content .top-right .login-button{
     color: #fff;
-    transition: color .3s;
     padding: 10px 17px 10px 17px;
     border: 1.5px solid #fff;
     border-radius: 5px;
@@ -64,7 +63,6 @@ header {
 .header-content .top-right .signup-button{
     color: #203cbc;
     background-color: #fff;
-    transition: color .3s;
     padding: 10px 17px 10px 17px;
     border: 1.5px solid #fff;
     border-radius: 5px;
@@ -82,18 +80,36 @@ header nav a {
     padding: 50px 20px;
     text-align: center;
     position: relative;
+    height: 400px;
 }
 
 .hero-content h1 {
+    text-align: left;
     font-size: 2.5em;
+    width: 700px;
+    box-sizing: border-box;
 }
 
 .hero-content p {
+    text-align: left;
     font-size: 1.2em;
+    color: #bbb;
+    width: 700px;
+    box-sizing: border-box;
 }
 
-.hero-content .app-buttons a {
+.hero-content .app-buttons {
     margin: 10px;
+    text-align: left;
+}
+
+.hero-content .app-buttons a{
+    margin: 10px;
+}
+
+.phone-image{
+    margin-right: 40px;
+    transform: scale(1.2);
 }
 
 .hero-content .phone-image {
@@ -103,12 +119,21 @@ header nav a {
     right: 20px;
 }
 
+.features-header{
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
 .features {
     background-color: #222;
     display: flex;
     overflow-x: auto;
     color: #fff;
-    padding: 50px 20px;
+    padding-left: 20px;
     text-align: center;
     white-space: nowrap;
 }
