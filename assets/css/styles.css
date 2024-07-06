@@ -6,19 +6,64 @@ body {
 }
 
 header {
-    background-color: #00b;
+    background-color: #203cbc;
     color: #fff;
-    padding: 10px 20px;
+    padding: 100px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-content .logo {
-    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 51px;
+    width: 130px;
     padding:15px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.header-content .top-right{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.language-icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+
+
+.header-content .top-right .login-button{
+    color: #fff;
+    transition: color .3s;
+    padding: 10px 17px 10px 17px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+}
+
+.header-content .top-right .signup-button{
+    color: #203cbc;
+    background-color: #fff;
+    transition: color .3s;
+    padding: 10px 17px 10px 17px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
 }
 
 header nav a {
@@ -28,7 +73,7 @@ header nav a {
 }
 
 .hero {
-    background-color: #0056b3;
+    background-color: #203cbc;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -93,7 +138,7 @@ footer {
 .footer-content .footer-links,
 .footer-content .social-links,
 .footer-content .app-buttons {
-    margin: 20px 0;
+    background-size: 30px;
 }
 
 .footer-content .footer-links a,
