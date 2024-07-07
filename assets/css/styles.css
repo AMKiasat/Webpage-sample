@@ -166,6 +166,10 @@ header nav a {
 
 .video-content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .video-text {
@@ -175,6 +179,7 @@ header nav a {
     text-align: left;
     color: #bbb;
     line-height: 1.7;
+    flex: 1;
 }
   
 .advantages {
@@ -194,43 +199,83 @@ header nav a {
     position: absolute;
     left: 0;
     top: 0;
-    color: #00f;
-    font-size: 1.5em;
 }
 
-.video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+.my-video {
+    height: auto;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    flex: 1;
+    object-fit: contain; 
 }
-
 
 
 footer {
-    background-color: #0056b3;
-    color: #fff;
+    background-color: #203cbc;
+    color: #bbb;
     padding: 20px;
     text-align: center;
 }
 
-.footer-content .footer-logo {
-    width: 200px;
+.footer-content {
+    display: flex;
+    line-height: 1.7;
+}
+
+.description {
+    text-align: left;
+    max-width: 400px;
+}
+
+.description p {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px;
     padding:15px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
 }
 
-.footer-content .footer-links,
-.footer-content .social-links,
-.footer-content .app-buttons {
-    background-size: 30px;
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-.footer-content .footer-links a,
-.footer-content .social-links a {
+.footer-links h2 {
     color: #fff;
+}
+
+.footer-links a {
+    color: #bbb;
+    padding-top: 20px;
     text-decoration: none;
-    margin: 0 10px;
+}
+
+.footer-right {
+
+}
+
+.social-links {
+    text-align: left;
+    color: #fff;
+}
+
+.social-links .buttons {
+    text-align: left;
+    display: flex;
+    height: 170px;
+}
+.social-links .buttons a {
+    align-items: center;
+    height: 40px;
+    padding: 20px 5px;
+    color: #fff;
+}
+
+.social-links .buttons img {
+    height: 40px;
 }
