@@ -6,6 +6,11 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .upper-blue {
     background-color: #203cbc;
 }
@@ -392,23 +397,22 @@ header nav a {
     .footer-content {
         flex-direction: column;
         text-align: center;
-        padding: 20px;
+        padding: 20px 0px 0px 0px;
         width: 100%;
         max-width: auto;
         display: flex;
-        justify-content: center; /* Center items horizontally */
-        align-items: center; /* Optional: Center items vertically */
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-logo {
         display: none;
-        
     }
     
     .footer-logo2 {
         display: inline;
         width: 150px;
-        padding:15px;
+        padding: 15px;
         border-radius: 0px 10px 10px 0px;
     }
 
@@ -425,7 +429,7 @@ header nav a {
         width: 100%;
         max-width: auto;
         justify-content: center;
-        margin-right: 0px;
+        margin-right: auto;
     }
 
     .footer-right {
@@ -441,10 +445,9 @@ header nav a {
     }
     
     .social-links .buttons {
-        align-items: right;
+        align-items: center;
         display: flex;
     }
-
 }
 
 
@@ -498,5 +501,40 @@ header nav a {
 
     .features-header {
         font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .header-content .logo {
+        left: 20px;
+        width: 70px;
+        padding:15px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .features-header {
+        font-size: 0.7em;
+    }
+
+    .features {
+        padding-left: 0px;
+    }
+    
+    .feature {
+        margin: 40px;
+    }
+
+    .video-on-new {
+        padding: 0px 20px;
+    }
+
+    
+    .video-text {
+        padding: 20px;
     }
 }
