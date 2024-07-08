@@ -372,25 +372,6 @@ header nav a {
         width: 100%;
         max-width: 700px;
     }
-
-    /* .my-video {
-        height: auto;
-        max-width: 700px;
-        display: block;
-        margin: 0 auto;
-        flex: 1;
-        object-fit: contain; 
-    } */
-
-    /* .video-text {
-        max-width: 550px;
-        padding: 30px;
-        border-radius: 10px;
-        text-align: left;
-        color: #bbb;
-        line-height: 1.7;
-        flex: 1;
-    } */
 }
 
 @media screen and (max-width: 730px) {
@@ -505,10 +486,10 @@ header nav a {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
     .header-content .logo {
-        left: 20px;
+        left: 10px;
         width: 70px;
         padding:15px;
     }
