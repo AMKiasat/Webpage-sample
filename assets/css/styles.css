@@ -125,9 +125,6 @@ header nav a {
     line-height: 1.7;
 }
 
-.hero-content .app-buttons {
-    margin: 10px;
-}
 
 .hero-content .app-buttons a{
     margin: 10px;
@@ -253,6 +250,10 @@ header nav a {
     padding:15px;
     background-color: #fff;
     border-radius: 0px 10px 10px 0px;
+}
+
+.footer-logo2 {
+    display: none;
 }
 
 .footer-links {
@@ -385,4 +386,117 @@ header nav a {
         line-height: 1.7;
         flex: 1;
     } */
+}
+
+@media screen and (max-width: 730px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        max-width: auto;
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Optional: Center items vertically */
+    }
+
+    .footer-logo {
+        display: none;
+        
+    }
+    
+    .footer-logo2 {
+        display: inline;
+        width: 150px;
+        padding:15px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .description {
+        text-align: center;
+        width: 100%;
+        max-width: auto;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    
+    .footer-links {
+        text-align: center;
+        width: 100%;
+        max-width: auto;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .footer-right {
+        text-align: center;
+        width: 100%;
+        max-width: auto;
+    }
+
+    .social-links .buttons {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+    
+    .social-links .buttons {
+        align-items: right;
+        display: flex;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    
+    .header-content .logo {
+        width: 100px;
+    }
+
+
+    .app-buttons a {
+        display: inline-block;
+    }
+    
+    .app-buttons a img {
+        width: 150px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    
+    .language-icon img {
+        display: none;
+    }
+    
+    .header-content .top-right {
+        top: 10px;
+        right: 20px;
+    }
+
+    .header-content .top-right .login-button {
+        padding: 7px 2px 7px 2px;
+        border: 1px solid #fff;
+    }
+    
+    .header-content .top-right .signup-button {
+        padding: 7px 2px 7px 2px;
+        border: 1px solid #fff;
+    }
+
+    .hero {
+        height: 550px;
+    }
+
+    .hero-content .app-buttons a {
+        margin: 0px;
+    }
+
+    .features-header {
+        font-size: 0.8em;
+    }
 }
